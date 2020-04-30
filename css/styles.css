@@ -1,5 +1,9 @@
-* {
+/* * {
   border: 1px solid lightcoral;
+} */
+
+.too-young, .old-enough, .result {
+  display: none;
 }
 
 img {
@@ -13,6 +17,10 @@ img {
   grid-template-columns: repeat(5, 1fr);
   padding: 10px;
   grid-gap: 1em;
+}
+
+.btn {
+  margin-bottom: 20px;
 }
 
 .result {

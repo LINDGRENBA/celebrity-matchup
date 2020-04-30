@@ -13,65 +13,10 @@
   <div class="container">
     <header>
       <h1>Celebrity Match Up</h1>
-      <p>Enter your information to be paired with a celebrity.</p>
     </header>
 
-    <div class="too-young">
-      <p>So sorry, but you are too young to enter our celebrity dating site. We look forward to your return on your 18th birthday!</p>
-    </div>
-
-
-    <!-- TOP GALLERY -->
-    <div class="grid-container">
-     
-      <div class="grid-item">
-        <div class="thumbnail">
-          <img class="person" src="img/abrie.jpg" alt="alison brie">
-          <div class="caption">
-            <p>Alison Brie</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <div class="thumbnail">
-          <img class="person" src="img/dradcliffe.jpg" alt="daniel radcliffe">
-          <div class="caption">
-            <p>Daniel Radcliffe</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <div class="thumbnail">
-          <img class="person" src="img/egregor.jpg" alt="ewan mcgregor"> 
-          <div class="caption">
-            <p>Ewan McGregor</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid item">
-        <div class="thumbnail">
-          <img class="person" src="img/rjones.png" alt="rashida jones">
-          <div class="caption">
-            <p>Rashida Jones</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <div class="thumbnail">
-          <img class="person" src="img/dinklage.jpg" alt="peter dinklage">
-          <div class="caption">
-            <p>Peter Dinklage</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <form action="#" id="age" class="was-validated">
+    <form action="#" id="age-check" class="was-validated">
+      <p>Enter your information to see if you can participate.</p>
       <div class="form-group">
         <label for="age">Please enter your age:</label>
         <input type="text" id="age" class="form-control" placeholder="age" required>
@@ -79,36 +24,96 @@
 
       <button id="agebutton" class="btn" type="submit">Submit</button>
     </form>
-    <br>
 
-    <form action="#" id="match-form">
+    <div class="too-young">
+      <p>So sorry, but you are too young to enter our celebrity dating site. We look forward to your return on your 18th birthday!</p>
+    </div>
 
-      <div class="form-group">
-        <label for="favMovieGenre">What is your favorite movie genre?</label>
-        <select name="movieGenre" id="favMovieGenre" class="form-control">
-          <option value="comedy">Comedy</option>
-          <option value="horror">Fantasy</option>
-        </select>
+
+    <!-- TOP GALLERY -->
+    <div class="old-enough">
+      <p>Complete the form below to see who you match up with.</p>
+
+      <div class="grid-container">
+     
+        <div class="grid-item">
+          <div class="thumbnail">
+            <img class="person" src="img/abrie.jpg" alt="alison brie">
+            <div class="caption">
+              <p>Alison Brie</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="grid-item">
+          <div class="thumbnail">
+            <img class="person" src="img/dradcliffe.jpg" alt="daniel radcliffe">
+            <div class="caption">
+              <p>Daniel Radcliffe</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="grid-item">
+          <div class="thumbnail">
+            <img class="person" src="img/egregor.jpg" alt="ewan mcgregor"> 
+            <div class="caption">
+              <p>Ewan McGregor</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="grid item">
+          <div class="thumbnail">
+            <img class="person" src="img/rjones.png" alt="rashida jones">
+            <div class="caption">
+              <p>Rashida Jones</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="grid-item">
+          <div class="thumbnail">
+            <img class="person" src="img/dinklage.jpg" alt="peter dinklage">
+            <div class="caption">
+              <p>Peter Dinklage</p>
+            </div>
+          </div>
+        </div>
+  
       </div>
+      
+      <form action="#" id="match-form">
+  
+        <div class="form-group">
+          <label for="favMovieGenre">What is your favorite movie genre?</label>
+          <select name="movieGenre" id="favMovieGenre" class="form-control">
+            <option value="comedy">Comedy</option>
+            <option value="horror">Fantasy</option>
+          </select>
+        </div>
+  
+        <div class="form-group">
+          <label for="firstDate">Which would you prefer to do on a first date?</label>
+          <select name="destination" id="firstDate" class="form-control">
+            <option value="dragon">Ride a dragon</option>
+            <option value="wrestle">Dress up in fun costumes and wrestle</option>
+          </select>
+        </div>
+  
+        <div class="form-group">
+          <label for="dogOrCat">Are you a dog or a cat person? Just choose one.</label>
+          <select name="animaltype" id="dogOrCat" class="form-control">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+          </select>
+        </div>
+  
+          <button id="matchbutton" class="btn" type="submit">Find Your Match</button>
+      </form>
 
-      <div class="form-group">
-        <label for="firstDate">Which would you prefer to do on a first date?</label>
-        <select name="destination" id="firstDate" class="form-control">
-          <option value="dragon">Ride a dragon</option>
-          <option value="wrestle">Dress up in fun costumes and wrestle</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="dogOrCat">Are you a dog or a cat person? Just choose one.</label>
-        <select name="animaltype" id="dogOrCat" class="form-control">
-          <option value="dog">Dog</option>
-          <option value="cat">Cat</option>
-        </select>
-      </div>
-
-        <button id="matchbutton" class="btn" type="submit">Find Your Match</button>
-    </form>
+    </div>
+    
 
     <div class="dinklage result">
       <h2>Your Match:</h2>
