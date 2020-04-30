@@ -8,6 +8,7 @@
 //show sorry message, hide form and do not show results
 
 $(document).ready(function() {
+
   $("#age-check").submit(function(event) {
     event.preventDefault();
     let age = parseInt($("#age").val());
@@ -20,4 +21,24 @@ $(document).ready(function() {
       $("#age-check").hide();
     }
   });
+
+  $("#match-form").submit(function(event) {
+    event.preventDefault();
+
+    let movieGenre = $("#favMovieGenre").val();
+    let firstDate = $("#firstDate").val();
+    let animalType = $("#dogOrCat").val();
+
+    if(movieGenre === "comedy" && firstDate === "wrestle" || movieGenre === "comedy" && animalType === "cat" || firstDate === "wrestle" && animalType === "cat") {
+      $(".brie").show();
+      $(".dinklage").hide();
+    } else {
+      $(".dinklage").show();
+      $(".brie").hide();
+    }
+
+  });
+  
 });
+
+// comedy fantasy , dragon wrestle , dog cat
