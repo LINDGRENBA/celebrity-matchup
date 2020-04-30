@@ -17,7 +17,7 @@ The purpose of this project is to use javascript, jQuery and branching to take i
 
 ## Known Bugs
 
-Need to improve form validation.
+Need to improve form validation. Need to find free images for celebrities and update.
 
 ## Support and contact details
 
@@ -31,6 +31,7 @@ Please feel free to contact me through GitHub with any questions, ideas or conce
 * GitHub
 * Bootstrap 3.3.7
 * javascript and jQuery 3.5.0
+* NOTE: Images used here ARE NOT MINE. They are from google images and are ONLY MEANT AS PLACEHOLDERS. I do not own these images, I do not have any image rights. 
 
 ### License
 
